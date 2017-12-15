@@ -1,17 +1,1 @@
- Volume in drive D has no label.
- Volume Serial Number is 006A-8B41
-
- Directory of D:\Project\CodingDojo\Python\myEnvironments\Django_fundamentals\LR
-
-12/14/2017  01:08 PM    <DIR>          .
-12/14/2017  01:08 PM    <DIR>          ..
-12/14/2017  01:08 PM               822 manage.py
-12/14/2017  01:08 PM    <DIR>          LR
-12/14/2017  01:09 PM    <DIR>          apps
-12/14/2017  10:54 PM            63,488 db.sqlite3
-12/15/2017  10:44 AM               103 requirements.txt
-12/15/2017  10:50 AM                34 .gitignore
-               4 File(s)         64,447 bytes
-               4 Dir(s)  45,672,824,832 bytes free
-  *.pyc
-  venv/
+*pyc
