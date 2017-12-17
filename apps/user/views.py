@@ -20,7 +20,7 @@ def loginP(request):
             return redirect('/login')
         else:
             request.session['user_id']=User.objects.get(email_address=request.POST['mail']).id
-            return redirect('/userinfo')
+            return redirect('/wall')
        
     
     else:
@@ -44,7 +44,7 @@ def regiP(request):
                                 phone=request.POST['pnum'],
                                 DOB=request.POST['dob'])           
             request.session['user_id']=User.objects.last().id
-            return redirect('/userinfo')
+            return redirect('/wall')
     else:
         return redirect('/register')
 
@@ -52,3 +52,7 @@ def show(request):
     user=User.objects.get(id=request.session['user_id'])
     print user.first_name
     return render(request,'user/user_info.html',{'user':user})
+
+def logout(request):
+    request.session.clear()
+    return redirect('/login')
